@@ -1,0 +1,72 @@
+version: 2
+
+sources:
+  - name: blackbelt
+    description: A clone of a Postgres application database.
+    database: prod
+    schema: public
+    tables:
+      - name: belt_objective
+        description: Raw objective of the belts
+        columns:
+          - name: id
+            description: Primary key for objective.
+            tests:
+              - unique
+              - not_null
+
+      - name: user_belt
+        columns:
+          - name: id
+            description: Primary key for user_belt.
+            tests:
+              - unique
+              - not_null
+
+      - name: jhi_user
+        columns:
+          - name: id
+            description: Primary key for user.
+            tests:
+              - unique
+              - not_null
+
+      - name: discipline
+        columns:
+          - name: id
+            description: Primary key for discipline.
+            tests:
+              - unique
+              - not_null
+
+      - name: workflow_step
+        columns:
+          - name: id
+            description: Primary key for workflow_step.
+            tests:
+              - unique
+              - not_null
+
+      - name: objective_comment
+        columns:
+          - name: id
+            description: Primary key for objective_comment.
+            tests:
+              - unique
+              - not_null
+
+      - name: objective
+        columns:
+          - name: id
+            description: Primary key for objective.
+            tests:
+              - unique
+              - not_null
+
+      - name: category
+        columns:
+          - name: id
+            description: Primary key for category.
+            tests:
+              - unique
+              - not_null
