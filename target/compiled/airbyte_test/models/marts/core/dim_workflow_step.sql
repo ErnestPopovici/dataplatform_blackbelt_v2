@@ -1,0 +1,1 @@
+SELECT * from "prod"."public"."stg_workflow_step_validated" UNION SELECT * from "prod"."public"."stg_workflow_step_non_validated"
